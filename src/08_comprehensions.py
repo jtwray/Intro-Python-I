@@ -29,11 +29,9 @@ print(y)
 
 a = ["foo", "bar", "baz"]
 
-y = []
+y = [weapon.upper() for weapon in a]
+print(y)
 
-print(len(a))
-print( f'a[-1] returns as : {a[0-1 and -1]}')
-print(True or True or True)
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
 
