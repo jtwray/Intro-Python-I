@@ -16,7 +16,7 @@ secondelement=a[slice(1,2)]
 print(secondelement)
 # print(a[1])
 # Output the second-to-last element: 9
-print(a[-1])
+# print(a[-1])
 secondToLast=a[slice(4,5)]
 print(secondToLast)
 
@@ -26,17 +26,24 @@ lastThree= a[slice(3,6,1)]
 print(lastThree)
 
 # Output the two middle elements in the array: [1, 7]
-print()
+middle2=a[slice(2,4,1)]
+print(middle2)
+
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
-print()
+notNum1=a[slice(1,6,1)]
+print(notNum1)
+
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print()
+notLastNum=a[slice(0,-1,1)]
+print(notLastNum)
 
 # For string s...
 
 s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
-print()
+
+werld=s[slice(7,12,1)]
+print(werld)
