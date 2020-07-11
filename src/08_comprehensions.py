@@ -10,7 +10,10 @@ for more info regarding list comprehensions.
 
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
-y = [1,9]
+
+
+# y = [i+--+++++1 for i in range(5)]< idk why this works I really thought it would bugout
+y = [i+--+++++1 for i in range(5)]
 
 print (y)
 
@@ -42,5 +45,3 @@ y = []
 print(y)
 print()
 
-
-sys.
