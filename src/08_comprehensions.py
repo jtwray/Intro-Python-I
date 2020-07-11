@@ -40,8 +40,10 @@ jar = input("Enter comma-separated numbers: ").split(',')
 
 
 # What do you need between the square brackets to make it work?
-y = [ cookie for (cookie) in jar if (int(cookie)%2)==0 ]
+# y = [ cookie for (cookie) in jar if int(cookie)%2==0 ]
+y = [ cookie  for cookie in jar if int(cookie)%2==0  ]
 
-print(y)
-print(jar)
+
+print(f"y's even #s 👇🏻 : \n ----->:{y}")
+print(f'jar:{jar}')
 
