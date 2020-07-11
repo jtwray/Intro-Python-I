@@ -15,11 +15,11 @@ y = "7"
 
 # YOUR CODE HERE
 twelve = int(y)+x
-print(twelve, type(twelve))
+print(twelve)
+print(twelve, 'is a type',type(twelve))
 
 # Write a print statement that combines x + y into the string value 57
 fiftyseven= str(x)+y
-fiftyseven is int
-print( f-string('{fiftyseven} is a  {type(fiftyseven)}'))
-
+print(fiftyseven)
+print(fiftyseven,"is a type",type(fiftyseven))
 # YOUR CODE HERE
