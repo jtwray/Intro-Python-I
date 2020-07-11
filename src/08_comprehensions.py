@@ -13,7 +13,7 @@ for more info regarding list comprehensions.
 
 
 # y = [i+--+++++1 for i in range(5)]< idk why this works I really thought it would bugout
-y = [i+--+++++1 for i in range(5)]
+y = [i+1 for i in range(5)]
 
 print (y)
 
