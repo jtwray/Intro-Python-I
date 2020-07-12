@@ -39,6 +39,18 @@ print(f2(*a))    # Should print 22
 # Note: Google "python default arguments" for a hint.
 
 # YOUR CODE HERE
+def f3(*args):
+    total=0
+    if len([*args]) >1:
+        for i in args:
+            total+= i
+    else:
+       if len([*args])==1:
+           for i in args:
+               total+=i
+               total+=1
+    return total
+
 
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
