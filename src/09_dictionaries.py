@@ -57,12 +57,14 @@ print(waypoints)
 
 
 for i in waypoints:
-    print( (i["lat"],i["lon"],i["name"]))
+    print('\nline 60', (i["lat"],i["lon"],i["name"]))
+    print('line 61',i)
+
 
 # latlon=[( i["lat"],i["lon"]) for i in waypoints]
 
 # print(f'waypoints[lat&lon]:{latlon}')
 
-
-latlon=[print(f'waypoints[lat-lon-name][{waypoints.index(i)}]:=>> {i["lat"],i["lon"],i["name"],}') for i in waypoints]
+print('\n')
+latlon=[print(f'\nwaypoints[lat-lon-name][{waypoints.index(i)}]:=>> {i["lat"],i["lon"],i["name"],}') for i in waypoints]
 
