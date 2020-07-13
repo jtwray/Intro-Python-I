@@ -17,12 +17,29 @@ print(secondelement)
 # print(a[1])
 # Output the second-to-last element: 9
 # print(a[-1])
-secondToLast=a[slice(4,5)]
+# secondToLast=a[slice(4,5)]
+# print(secondToLast)
+# secondToLast=a[4:5]
+# print(secondToLast)
+# secondToLast=a[slice(-2,-3,-1)] # start from the 2nd to last, stop before the 3rd to last, go backwards i.e. right to left
+# print(secondToLast)
+# secondToLast=a[-2:-3:-1]        # start from the 2nd to last, stop before the 3rd to last, go backwards i.e. right to left
+# print(secondToLast)
+# secondToLast=a[slice(4,-1)]
+# print(secondToLast)
+# secondToLast=a[4:-1]
+# print(secondToLast)
+# secondToLast=a[slice(-2,-1)]# start at the 2nd to last item: stop before the last item
+# print(secondToLast)
+secondToLast=a[-2:-1]       # start at the 2nd to last item: stop before the last item
 print(secondToLast)
 
 # Output the last three elements in the array: [7, 9, 6]
 #slice(start,stop,step)
 lastThree= a[slice(3,6,1)]
+
+print(lastThree)
+lastThree= a[-3:]
 print(lastThree)
 
 # Output the two middle elements in the array: [1, 7]
@@ -45,5 +62,5 @@ s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
 
-werld=s[slice(7,12,1)]
+werld=s[slice(7,12)]
 print(werld)
