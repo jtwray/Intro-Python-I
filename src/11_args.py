@@ -38,18 +38,20 @@ print(f2(*a))    # Should print 22
 # arguments.
 # Note: Google "python default arguments" for a hint.
 
+def f3(x,y=1):
+    return x+ y
 # YOUR CODE HERE
-def f3(*args):
-    total=0
-    if len([*args]) >1:
-        for i in args:
-            total+= i
-    else:
-       if len([*args])==1:
-           for i in args:
-               total+=i
-               total+=1
-    return total
+# def f3(*args):
+#     total=0
+#     if len([*args]) >1:
+#         for i in args:
+#             total+= i
+#     else:
+#        if len([*args])==1:
+#            for i in args:
+#                total+=i
+#                total+=1
+#     return total
 
 
 print(f3(1, 2))  # Should print 3
