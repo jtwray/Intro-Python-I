@@ -40,6 +40,7 @@ print(f2(*a))    # Should print 22
 
 def f3(x,y=1):
     return x+ y
+    
 # YOUR CODE HERE
 # def f3(*args):
 #     total=0
