@@ -16,7 +16,7 @@ class Waypoint(LatLon):
     def __init__(self,name,lat,lon):
         super().__init__(lat,lon)
         self.name=name
-    def __str__(self):
+    def __repr__(self):
         return 'name=%s,lat=%s,lon=%s' % (self.name,self.lat,self.lon)
 
 
@@ -39,6 +39,7 @@ waypoint=Waypoint("Catacombs",41.70505,-121.51521)
 # Without changing the following line, how can you make it print into something
 # more human-readable? Hint: Look up the `object.__str__` method
 print(waypoint)
+print(f'waypoint:{waypoint}')
 
 # Make a new geocache "Newberry Views", diff 1.5, size 2, 44.052137, -121.41556
 
@@ -46,4 +47,6 @@ print(waypoint)
 geocache=Geocache("Newberry Views",1.5,2,44.052137,-121.41556)
 
 # Print it--also make this print more nicely
-print(geocache)
+print(f'geocache:{geocache}')
+
+#why does the __str__ of a parent overwrite the __repr__ of a child class component
