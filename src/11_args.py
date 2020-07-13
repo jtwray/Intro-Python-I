@@ -72,7 +72,7 @@ print(f3(8))     # Should print 9
 #       print(f'{arg}')
    
 def f4(**attributes):    
-    for (key , value) in *attributes:
+    for (key , value) in attributes.items():
         print (f'key:{key},value:{value}')
 # Should print
 # key: a, value: 12
