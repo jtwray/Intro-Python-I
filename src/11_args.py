@@ -67,10 +67,17 @@ print(f3(8))     # Should print 9
 # Note: Google "python keyword arguments".
 
 # YOUR CODE HERE
-
+# def f4(*args):
+#   for arg in args:
+#       print(f'{arg}')
+   
+def f4(**attributes):    
+    for (key , value) in *attributes:
+        print (f'key:{key},value:{value}')
 # Should print
 # key: a, value: 12
 # key: b, value: 30
+
 f4(a=12, b=30)
 
 # Should print
@@ -83,6 +90,6 @@ d = {
     "monster": "goblin",
     "hp": 3
 }
-
+    
 # How do you have to modify the f4 call below to make this work?
-f4(d)
+f4(**d)
