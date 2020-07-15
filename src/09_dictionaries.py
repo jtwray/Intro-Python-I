@@ -66,5 +66,5 @@ for i in waypoints:
 # print(f'waypoints[lat&lon]:{latlon}')
 
 print('\n')
-latlon=[print(f'\nwaypoints[lat-lon-name][{waypoints.index(i)}]:=>> {i["lat"],i["lon"],i["name"],}') for i in waypoints]
+latlon=[print(f'\n waypoints[lat-lon-name][{waypoints.index(i)}]:=>> {i["lat"],i["lon"],i["name"],}') for i in waypoints]
 
